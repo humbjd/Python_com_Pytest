@@ -12,7 +12,10 @@ def multiplicar_dois_numeros(num1, num2):
     return num1 * num2
 
 def dividir_dois_numeros(num1, num2):
-    return num1 / num2
+    try:
+        return num1 / num2
+    except ZeroDivisionError:
+        return 'Não é possivel dividir por zero'
 
 def elevar_um_numero_pelo_outro(num1, num2):
     return num1 ** num2
