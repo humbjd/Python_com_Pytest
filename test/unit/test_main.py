@@ -9,7 +9,7 @@ def testar_somar_dois_numeros():
      num1 = 4
      num2 = 5
     # Saida / Output
-    resultado_esperado = 17
+    resultado_esperado = 9
 
     # - 2 - Executar
     resultado_atual = somar_dois_numeros(num1, num2)
