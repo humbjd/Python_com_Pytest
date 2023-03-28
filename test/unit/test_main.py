@@ -1,6 +1,6 @@
 import pytest
 
-from main import somar_dois_numeros, calcular_area_do_circulo
+from main import somar_dois_numeros, calcular_area_do_circulo, calcular_volume_do_paralelograma
 
 
 def testar_somar_dois_numeros():
@@ -28,3 +28,18 @@ def testar_calcular_area_do_circulo():
 
     # 3 - Valida
     assert resultado_atual == resultado_esperado
+
+def testar_calcular_volume_do_paralelograma():
+    # 1 - Configura
+    largura = 5
+    comprimento = 10
+    altura = 2
+    resultado_esperado = 100
+
+    # 2 - Executa
+    resultado_atual = calcular_volume_do_paralelograma(largura, comprimento, altura)
+
+    # 3 - Valida
+    assert resultado_atual == resultado_esperado
+
+
